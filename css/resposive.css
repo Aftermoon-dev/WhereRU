@@ -1,4 +1,9 @@
-/* Responsive Page - by Minjae Seon */
+/*
+Resposive StyleSheet
+Gachon Univ. Department of Software 2019-1 Major Course 'Web Programming' Project
+Made by Minjae Seon
+*/
+
 @media screen and (max-width: 950px) {
     #default_navbar {
         display: none;

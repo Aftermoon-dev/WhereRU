@@ -1,6 +1,7 @@
 /*
 LadyBug (Shuttle) TimeTable StyleSheet
-Gachon Univ. Department of Software 2019-1 Major Course 'Web Programming' Project 
+Gachon Univ. Department of Software 2019-1 Major Course 'Web Programming' Project
+Made by Gunyoung Kang, Minjae Seon
 */
 
 #ladybug_header {
@@ -30,7 +31,6 @@ Gachon Univ. Department of Software 2019-1 Major Course 'Web Programming' Projec
     display: inline-block;
     border : 2px dotted gray;
     padding : 10px 10px 10px 10px;
-    margin : 0 15px 0 15px;
 }
 
 #ladybug_content3{
