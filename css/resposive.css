@@ -1,0 +1,42 @@
+/* Responsive Page - by Minjae Seon */
+@media screen and (max-width: 950px) {
+    #default_navbar {
+        display: none;
+    }
+
+    #small_navbar {
+        display: inline;
+    }
+
+    header {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    header img {
+        padding-right: 0px;
+    }
+
+    #study img {
+        width: 50%;
+    }
+    
+    #study_section {
+        margin: auto;
+    }
+
+    #study_content {
+        width: 100%;
+        margin: auto;
+        border: 0px;
+        align-content: center;
+    }
+
+    #study_nav {
+        display: none;
+    }
+
+    #study_photo {
+        display: none;
+    }
+}

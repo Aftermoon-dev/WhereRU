@@ -17,6 +17,8 @@ header {
 
 header img {
     vertical-align: middle;
+    padding: 0 15px 0 0;
+    width: 12%;
 }
 
 nav {
@@ -51,7 +53,7 @@ nav a:hover {
 
 main {
     margin: 10px 0 10px 0;
-    border: 2px solid rgb(200, 234, 255);
+    
 }
 
 #main_map {
@@ -63,116 +65,19 @@ main {
 }
 
 footer {
+    position: relative;
+    width: 100%;
     background-color: rgb(64, 164, 231);
     color: white;
     text-align: center;
     font-size: small;
-    padding: 20px 20px 20px 20px;
+    padding-top: 10px;
+    bottom: 0;
 }
 
-/*
-Study Page StyleSheet
-Gachon Univ. Department of Software 2019-1 Major Course 'Web Programming' Project 
-*/
-
-#study_header {
-    border-bottom : 2px solid gray;
-    text-align : center;
-    background-color : rgb(232, 232, 255);
+footer img {
+    padding-top: 10px;
+    padding-bottom : 5px;
 }
 
-#study_header img {
-    display: inline;
-    vertical-align : middle;
-    width: 20%;
-}
-
-#study_nav {
-    vertical-align : middle;
-}
-
-#study_nav a {
-    text-decoration: none !important;
-    font-weight: bold;
-    padding: 0 20px 0 20px;
-    color: orange;
-}
-
-#study_nav a:visited {
-    color : orange;
-}
-
-#study_nav a:hover {
-    color: rgb(53, 221, 129);
-}
-
-#study_section {
-    display: flex;
-    padding: 0px 15px 0px 15px;
-}
-
-#study_content {
-    padding: 15px 0px 0px 30px;
-    border-right: 2px solid gray;
-    display: inline-block;
-    width: 50%;
-}
-
-#study_photo {
-    padding: 15px 15px 0px 15px;
-    display: inline-block;
-    width: 50%;
-}
-#study_menu {
-    vertical-align : middle;
-    display : inline;
-    text-decoration : none;
-}
-
-#study_nav {
-    display : inline;
-    margin: auto;
-}
  
-/* Responsive Page - by Minjae Seon */
-@media screen and (max-width: 950px) {
-    #default_navbar {
-        display: none;
-    }
-
-    #small_navbar {
-        display: inline;
-    }
-
-    header {
-        text-align: center;
-        padding-left: 0px;
-    }
-
-    header img {
-        padding-right: 0px;
-    }
-
-    #study img {
-        width: 50%;
-    }
-    
-    #study_section {
-        margin: auto;
-    }
-
-    #study_content {
-        width: 100%;
-        margin: auto;
-        border: 0px;
-        align-content: center;
-    }
-
-    #study_nav {
-        display: none;
-    }
-
-    #study_photo {
-        display: none;
-    }
-}

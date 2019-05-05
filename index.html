@@ -1,9 +1,12 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>가천대학교 Campus Map</title>
+    <title>가천대학교 WhereRU</title>
     <meta name="author" content="강건영, 권민우, 선민재">
-    <link rel="stylesheet" type="text/css" href="css/style.css?v2">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/resposive.css">
+    <link rel="stylesheet" type="text/css" href="css/study.css">
+    <link rel="stylesheet" type="text/css" href="css/shuttle.css">
     <link rel="shortcut icon" href="img/favicon.ico">
     <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
@@ -11,7 +14,7 @@
 <!-- Disable Right Click -->
 <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
     <header>
-        <img src="img/h1_logos.png" alt="Gachon Univ Logo">
+        <img src="img/whereru.png" alt="Gachon Univ Logo">
         <nav>  
             <div id="default_navbar">
                 <a onclick="mainnav_show('main_map');">메인</a>
@@ -97,13 +100,45 @@
         </div>
 
         <div id="shuttle" style="display: none;">
-            Shuttle
+            <div id="ladybug_header">
+                <img src="img/ladybug/ladybug.png">
+            </div>
+            <div id="ladybug_section">
+                <h1>무당이</h1>
+                <div id="ladybug_content1">
+                    <h3>상행노선</h3>
+                    <ul>
+                        <li>정류장 : IT대학-교육대학원-학생회관-운동장</li>
+                    </ul>
+                    <img src="img/ladybug/상행노선1.jpg" width=450 height=400>
+                </div>
+                <div id="ladybug_content2">
+                    <h3>하행노선</h3>
+                    <ul>
+                        <li>정류장 : 운동장-학생회관-교육대학원-예술대학1-글로벌센터-IT대학</li>
+                    </ul>
+                    <img src="img/ladybug/하행노선1.jpg" width=450 height=400>
+                </div>
+                <div id="ladybug_content3">
+                    <h3>무당이 시간표</h3>
+                    <ul>
+                        <li>첫차 시간 : 8시 40분</li>
+                        <li>막차 시간 : 5시 15분</li>
+                        <li>점심 시간 : 11시 45분 ~ 1시</li>
+                        <li>1교시(9시) 이전 : 배차간격이 4분임</li>
+                        <li>평균 배차간격 : 15분</li>
+                    </ul>
+                    <img src="img/ladybug/시간표1.jpg" width=400 height=400>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
         Made by 강건영, 권민우, 선민재 @ <a href="http://sw.gachon.ac.kr/" target="_blank">Gachon Univ. Department of Software</a>
         <br />
-        이 홈페이지는 Chrome에 최적화 되어있습니다.
+        <a href="https://github.com/gachon-whereru/WhereRU" target="_blank">
+            <img src="img/GitHub-Mark-64px.png" alt="Github">
+        </a>
     </footer>
 </body>
 

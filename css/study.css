@@ -1,0 +1,63 @@
+/*
+Study Page StyleSheet
+Gachon Univ. Department of Software 2019-1 Major Course 'Web Programming' Project 
+*/
+
+#study_header {
+    border-bottom : 2px solid gray;
+    text-align : center;
+    background-color : rgb(232, 232, 255);
+}
+
+#study_header img {
+    display: inline;
+    vertical-align : middle;
+    width: 20%;
+}
+
+#study_nav {
+    vertical-align : middle;
+}
+
+#study_nav a {
+    text-decoration: none !important;
+    font-weight: bold;
+    padding: 0 20px 0 20px;
+    color: orange;
+}
+
+#study_nav a:visited {
+    color : orange;
+}
+
+#study_nav a:hover {
+    color: rgb(53, 221, 129);
+}
+
+#study_section {
+    display: flex;
+    padding: 0px 15px 0px 15px;
+}
+
+#study_content {
+    padding: 15px 0px 0px 30px;
+    border-right: 2px solid gray;
+    display: inline-block;
+    width: 50%;
+}
+
+#study_photo {
+    padding: 15px 15px 0px 15px;
+    display: inline-block;
+    width: 50%;
+}
+#study_menu {
+    vertical-align : middle;
+    display : inline;
+    text-decoration : none;
+}
+
+#study_nav {
+    display : inline;
+    margin: auto;
+}

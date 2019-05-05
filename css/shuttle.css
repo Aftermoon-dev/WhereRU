@@ -1,0 +1,45 @@
+/*
+LadyBug (Shuttle) TimeTable StyleSheet
+Gachon Univ. Department of Software 2019-1 Major Course 'Web Programming' Project 
+*/
+
+#ladybug_header {
+    border-bottom : 2px solid gray;
+    text-align : center;
+    background-color : rgb(0, 0, 0);
+}
+
+#ladybug_header img {
+    display: inline;
+    vertical-align : middle;
+    width: 20%;
+}
+
+#ladybug_section{
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+#ladybug_content1{
+    display: inline-block;
+    border : 2px dotted gray;
+    padding : 10px 10px 10px 10px;
+}
+
+#ladybug_content2{
+    display: inline-block;
+    border : 2px dotted gray;
+    padding : 10px 10px 10px 10px;
+    margin : 0 15px 0 15px;
+}
+
+#ladybug_content3{
+    display: inline-block;
+    border : 2px dotted gray;
+    padding : 10px 10px 10px 10px;
+}
+
+#ladybug_section li{
+    font-weight : bold;
+    font-size : 15px;
+}
