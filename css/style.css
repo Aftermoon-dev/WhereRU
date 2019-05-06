@@ -54,15 +54,14 @@ nav a:hover {
 
 main {
     margin: 10px 0 10px 0;
-    
 }
 
 #main_map {
     text-align: center;
 }
 
-#main_map img {
-    margin-bottom: 20px;
+#main_map svg {
+    width: 90%;
 }
 
 footer {

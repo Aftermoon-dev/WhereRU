@@ -14,12 +14,19 @@ Made by Minjae Seon
     }
 
     header {
+        position: fixed;
+        width: 100%;
         text-align: center;
         padding-left: 0px;
     }
 
     header img {
-        padding-right: 0px;
+        width: 30%;
+        padding-right: 10px;
+    }
+
+    footer {
+        position: fixed;
     }
 
     #study img {
