@@ -61,7 +61,8 @@ main {
 }
 
 #main_map svg {
-    width: 90%;
+    vertical-align: bottom;
+    max-width: 90%;
 }
 
 footer {

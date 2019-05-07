@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <title>가천대학교 WhereRU</title>
     <meta name="author" content="강건영, 권민우, 선민재">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/study.css">
     <link rel="stylesheet" type="text/css" href="css/shuttle.css">
     <link rel="shortcut icon" href="img/favicon.ico">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
     <meta property="og:title" content="WhereRU">
     <meta property="og:description" content="가천대학교의 캠퍼스를 둘러보세요!">
     <meta property="og:image" content="https://gachon-whereru.github.io/WhereRU/img/campus_global.png">
@@ -17,7 +17,7 @@
 <!-- Disable Right Click -->
 <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
     <header>
-        <img src="img/whereru.png" alt="Gachon Univ Logo">
+        <img src="img/whereru.png" alt="WhereRU Logo">
         <nav>  
             <div id="default_navbar">
                 <a onclick="mainnav_show('main_map');">메인</a>
@@ -39,6 +39,7 @@
     </header>
     <main>
         <div id="main_map">
+            <h2>궁금한 곳을 클릭하세요!</h2>
             <svg
             xmlns:dc="http://purl.org/dc/elements/1.1/"
             xmlns:cc="http://creativecommons.org/ns#"
@@ -348,7 +349,6 @@
                 onmouseover="this.style.opacity=1"
                 onmouseout="this.style.opacity=0" />
             </svg>
-
         </div>
 
         <div id="food" style="display: none;">
@@ -453,6 +453,7 @@
 </body>
 
 <script type="text/javascript">
+    // Navbar System
     var divlist = ['main_map', 'food', 'study','rest', 'shuttle'];
 
     function mainnav_show(divname) {
@@ -466,17 +467,20 @@
             }
         }
     }
-
+    
+    // e value : Select Item's ID (ex. gachonhall, collegeofit...)
     function mapselects(e) {
         switch(e) {
             case 'gachonhall': 
                 alert("가천관임ㅋ");
                 break;
+            case 'collegeofit':
+                alert("IT대학");
+                break; 
             default:
                 alert(e);
                 break;
         }
-            
     }
 </script>
 </html>
