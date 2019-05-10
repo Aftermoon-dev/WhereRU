@@ -408,9 +408,9 @@
             <div id="rest_header">
                 <img src="img/rest/restspace.png">
                 <div id="rest_nav">
-                    <a href="img/rest/cafe.html" target="_self">카페</a>
-                    <a href="img/rest/square.html" target="_self">광장</a>
-                    <a href="img/rest/restarea.html" target="_self">쉼터</a>
+                    <a onclick="openPopup('./img/rest/cafe.html'); ">카페</a>
+                    <a onclick="openPopup('./img/rest/square.html');">광장</a>
+                    <a onclick="openPopup('./img/rest/restarea.html');">쉼터</a>
                 </div>
             </div>
             <div id="rest_section">
@@ -506,6 +506,10 @@
                 alert(e);
                 break;
         }
+    }
+
+    function openPopup(url) {
+        window.open(url, "", "width=500, height=800, toolbar=no, menubar=no, scrollbars=yes");
     }
 </script>
 </html>
