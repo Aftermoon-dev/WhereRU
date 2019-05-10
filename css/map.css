@@ -1,0 +1,15 @@
+/* 
+Map Page StyleSheet
+Gachon Univ. Department of Software 2019-1 Major Course 'Web Programming' Project 
+Made by Minjae Seon
+*/
+
+#main_map {
+    text-align: center;
+}
+
+#main_map svg {
+    vertical-align: bottom;
+    max-width: 100%;
+    height: 50%;
+}

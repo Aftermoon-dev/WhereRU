@@ -56,16 +56,6 @@ main {
     margin: 10px 0 10px 0;
 }
 
-#main_map {
-    text-align: center;
-}
-
-#main_map svg {
-    vertical-align: bottom;
-    max-width: 90%;
-    height: 50%;
-}
-
 footer {
     position: relative;
     width: 100%;
