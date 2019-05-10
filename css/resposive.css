@@ -44,4 +44,8 @@ Made by Minjae Seon
     #study_photo {
         display: none;
     }
+
+    #ladybug_section {
+        flex-direction: column !important;
+    }
 }

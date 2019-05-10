@@ -17,19 +17,24 @@ Made by Gunyoung Kang, Minjae Seon
 
 #ladybug_section{
     display: flex;
-    overflow: hidden;
+    flex-direction: row;
+    overflow: auto;
     height: auto;
     justify-content: center;
     margin: 10px 10px 10px 10px;
 }
 
-.ladybug_content{
-    display: flex;
-    overflow: hidden;
-    height: auto;
-    display: inline-block;
+.ladybug_content {
+    text-align: center;
+    display: block;
     border : 2px dotted gray;
     padding: 10px 10px 10px 10px;
+    max-width: 100%;
+}
+
+.ladybug_content img {
+    max-width: 100%;
+    margin: 0px auto;
 }
 
 #ladybug_section li{
