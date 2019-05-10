@@ -19,21 +19,6 @@ Made by Gunyoung Kang, Minjae Seon
     vertical-align : middle;
 }
 
-#study_nav a {
-    text-decoration: none !important;
-    font-weight: bold;
-    padding: 0 20px 0 20px;
-    color: orange;
-}
-
-#study_nav a:visited {
-    color : orange;
-}
-
-#study_nav a:hover {
-    color: rgb(53, 221, 129);
-}
-
 #study_section {
     display: flex;
     padding: 0px 15px 0px 15px;

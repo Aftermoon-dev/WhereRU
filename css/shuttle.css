@@ -16,26 +16,20 @@ Made by Gunyoung Kang, Minjae Seon
 }
 
 #ladybug_section{
+    display: flex;
+    overflow: hidden;
+    height: auto;
+    justify-content: center;
     margin: 10px 10px 10px 10px;
-    text-align: center;
 }
 
-#ladybug_content1{
+.ladybug_content{
+    display: flex;
+    overflow: hidden;
+    height: auto;
     display: inline-block;
     border : 2px dotted gray;
-    padding : 10px 10px 10px 10px;
-}
-
-#ladybug_content2{
-    display: inline-block;
-    border : 2px dotted gray;
-    padding : 10px 10px 10px 10px;
-}
-
-#ladybug_content3{
-    display: inline-block;
-    border : 2px dotted gray;
-    padding : 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 #ladybug_section li{
