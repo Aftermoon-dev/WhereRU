@@ -56,6 +56,18 @@ main {
     margin: 10px 0 10px 0;
 }
 
+.content_nav {
+    vertical-align : middle;
+    padding-bottom: 10px;
+}
+
+.content_nav a {
+    text-decoration: none !important;
+    font-weight: bold;
+    padding: 0 20px 0 20px;
+    color: orange;
+}
+
 footer {
     position: relative;
     width: 100%;
