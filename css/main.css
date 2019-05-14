@@ -16,6 +16,10 @@ header {
     text-align: center;
 }
 
+header a {
+    text-decoration: none;
+}
+
 header img {
     vertical-align: middle;
     padding: 0 15px 0 0;
