@@ -5,78 +5,87 @@ Made by Minjae Seon
 */
 
 body {
-    background-color: ivory;
-    font-family: 'NanumBarunGothic', 'serif';
+  background-color: white;
+  font-family: 'NanumBarunGothic', 'serif';
 }
 
 header {
-    background-color: rgb(64, 164, 231);
-    padding: 15px 0 15px 0;
-    margin-bottom: 10px;
-    text-align: center;
+  background-color: transparent;
+  margin: 20px 20px 30px 20px;
+  vertical-align: middle;
 }
 
 header a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 header img {
-    vertical-align: middle;
-    padding: 0 15px 0 0;
-    width: 12%;
-}
-
-nav {
-    vertical-align: middle;
-    display: inline;
-}
-
-@media screen {
-    #default_navbar {
-        display: inline;
-    }
-    
-    #small_navbar {
-        display: none;
-    } 
+  vertical-align: middle;
+  padding-top: 5px;
+  width: 20%;
 }
 
 nav a {
-    text-decoration: none !important;
-    font-weight: bold;
-    padding: 0 20px 0 20px;
-    color: white;
+  text-decoration: none !important;
 }
 
-nav a:visited {
-    color : white;
+#nav-hamburger {
+  vertical-align: middle;
+  padding-top: 8px;
+  padding: 15px 25px 15px 25px;
+  font-size: 30px;
+  float: right;
+  color: white;
+  background-color: lightgreen;
 }
 
-nav a:hover {
-    color: rgb(160, 219, 255);
+#sideMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#sideMenu a {
+  padding: 8px 8px 0px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+#sideMenu a:hover {
+  color: #f1f1f1;
 }
 
 main {
-    margin: 10px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 .content_nav {
-    vertical-align : middle;
-    padding-bottom: 10px;
+  vertical-align : middle;
+  padding-bottom: 10px;
 }
 
 .content_nav a {
-    text-decoration: none !important;
-    font-weight: bold;
-    padding: 0 20px 0 20px;
-    color: orange;
+  text-decoration: none !important;
+  font-weight: bold;
+  padding: 0 20px 0 20px;
+  color: orange;
 }
 
 footer {
     position: relative;
     width: 100%;
-    background-color: rgb(64, 164, 231);
-    color: white;
+    background-color: transparent;
+    color: black;
     text-align: center;
     font-size: small;
     padding-top: 10px;
@@ -90,7 +99,7 @@ footer img {
 }
 
 footer a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
- 
+

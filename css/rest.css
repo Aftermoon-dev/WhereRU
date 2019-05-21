@@ -1,14 +1,5 @@
-#rest_header {
-    border-bottom : 2px solid gray;
-    text-align : center;
-    background-color : rgb(0, 0, 0);
-}
-
-#rest_header img {
-    display: inline;
-    vertical-align : middle;
-}
-
-#rest_section {
-    margin-left: 10px;
-}
+/*
+Rest StyleSheet
+Gachon Univ. Department of Software 2019-1 Major Course 'Web Programming' Project
+Made by Gunyoung Kang, Minjae Seon
+*/
