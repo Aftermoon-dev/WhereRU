@@ -29,6 +29,10 @@ nav a {
   text-decoration: none !important;
 }
 
+main {
+  z-index: 0;
+}
+
 #nav-hamburger {
   vertical-align: middle;
   padding-top: 8px;
@@ -69,37 +73,6 @@ main {
   margin: 10px 0 10px 0;
 }
 
-.content_nav {
-  vertical-align : middle;
-  padding-bottom: 10px;
+#message {
+  z-index: 99;
 }
-
-.content_nav a {
-  text-decoration: none !important;
-  font-weight: bold;
-  padding: 0 20px 0 20px;
-  color: orange;
-}
-
-footer {
-    position: relative;
-    width: 100%;
-    background-color: transparent;
-    color: black;
-    text-align: center;
-    font-size: small;
-    padding-top: 10px;
-    bottom: 0;
-}
-
-footer img {
-    width: 24px;
-    padding-top: 10px;
-    padding-bottom : 5px;
-}
-
-footer a {
-    color: black;
-    text-decoration: none;
-}
-

@@ -15,7 +15,7 @@ function mainside_show(divname) {
 }
 
 // Side Menu Open Check Variable
-var open = false;
+var sopen = false;
 
 // Side Menu Function
 function openMenu() {
@@ -26,7 +26,7 @@ function openMenu() {
     var mq = window.matchMedia('screen and (max-width:950px)');
 
     // If, not open sideMenu
-    if(!open) {
+    if(!sopen) {
         // If, not max-width:950px (PC)
         if(mq.matches == false) {
             // Set sideMenu Width
@@ -37,17 +37,43 @@ function openMenu() {
             // Set sideMenu Width
             sidemenu.style.width = "100px";
         }
-        open = true;
+        sopen = true;
     }
     // If, open sideMenu
     else {
         // Restore All Setting
         sidemenu.style.width = "0px";
-        open = false;
+        sopen = false;
     }
 }
 
-// Popup
-function openPopup(url) {
-    window.open(url, "WhereRU_popup", "width=500, height=800, toolbar=no, menubar=no, scrollbars=yes");
+// Show Message Dialog
+function showMessage(title, message) {
+    var MessageDialog = document.getElementById('message');
+    var D_Title = document.getElementById('m_title');
+    var D_Message = document.getElementById('m_content');
+
+    if(MessageDialog.style.display == "none") {
+        D_Title.innerText = title;
+        D_Message.innerHTML = message;
+        MessageDialog.style.display = '';
+    }
+    else {
+        MessageDialog.style.display = 'none';
+    }
+}
+
+// e value : Select Item's ID (ex. gachonhall, collegeofit...)
+function mapselects(e) {
+    switch(e) {
+        case 'gachonhall': 
+            showMessage("가천관", "가천관이에요");
+            break;
+        case 'collegeofit':
+            alert("IT대학");
+            break; 
+        default:
+            alert(e);
+            break;
+    }
 }

@@ -15,10 +15,16 @@ Made by Minjae Seon
     }
 
     #nav-hamburger {
+        font-size: 16px;
         padding: 5px 13px 5px 13px;
     }
 
+    #sideMenu {
+        height: 35% !important;
+    }
+
     #sideMenu a {
+        padding: 8px 8px 0px 16px;
         font-size: 10px;
     }
 

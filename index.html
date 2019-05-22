@@ -11,9 +11,8 @@
     <link rel="stylesheet" type="text/css" href="css/resposive.css">
     <link rel="stylesheet" type="text/css" href="css/restaurant.css">
     <script src="js/main.js"></script>
-    <script src="js/map.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
-    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta property="og:title" content="WhereRU">
     <meta property="og:description" content="가천대학교의 캠퍼스를 둘러보세요!">
     <meta property="og:image" content="https://gachon-aplus.github.io/WhereRU/img/campus_global.png">
@@ -367,5 +366,11 @@
             Shuttle
         </article>
     </main>
+
+    <dialog id="message" style="display: none;">
+        <h3 id="m_title"></h3>
+        <span id="m_content"></span>
+        <button id="message_ok" onclick="showMessage();">확인</button>
+    </dialog>
 </body>
 </html>
