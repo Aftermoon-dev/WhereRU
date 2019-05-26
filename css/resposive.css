@@ -22,7 +22,12 @@ Made by Minjae Seon
     }
 
     dialog {
-        width: 45%;
+        width: 55%;
+    }
+    
+    dialog img {
+        width: 200px;
+        height: 150px;
     }
 
     #main_map svg {

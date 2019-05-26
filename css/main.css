@@ -86,7 +86,7 @@ main {
 
 dialog {
   overflow: auto;
-  width: 50%;
+  width: 25%;
   border-color: lightgreen;
 }
 
