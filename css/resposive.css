@@ -5,22 +5,8 @@ Made by Minjae Seon
 */
 
 @media screen and (max-width: 950px) {
-    header {
-        margin: 0px 20px 0px 20px;
-    }
-
-    header img {
-        padding-top: 5px;
-        width: 30%;
-    }
-
-    #nav-hamburger {
-        font-size: 16px;
-        padding: 5px 13px 5px 13px;
-    }
-
     #sideMenu {
-        height: 35% !important;
+        height: 70% !important;
     }
 
     #sideMenu a {
@@ -28,22 +14,7 @@ Made by Minjae Seon
         font-size: 10px;
     }
 
-    #main_map svg {
-        position: relative;
-        overflow-x: scroll;
-        overflow-y: scroll;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    #nav-hamburger {
-        margin-top: 8px;
-        margin-bottom: 5px;
-    }
-
-    header img {
-        width: 40%;
-        padding-top: 15px;
-        padding-bottom: 10px;
+    dialog {
+        width: 45%;
     }
 }

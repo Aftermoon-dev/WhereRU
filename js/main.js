@@ -3,12 +3,18 @@
 // Div List Array
 var divlist = ['main_map', 'food', 'study','rest', 'shuttle'];
 
+// Main Sidemenu Open Function
 function mainside_show(divname) {
+    // Get All Array's Element
     for(var i = 0; i < divlist.length; i++) {
+        // if divname in divlist
         if(divname == divlist[i]) {
+            // Show Div
             document.getElementById(divname).style.display = "";
         }
+        // if not
         else {
+            // Other Hide Div 
             document.getElementById(divlist[i]).style.display = "none";
         }
     }
@@ -53,27 +59,26 @@ function showMessage(title, message) {
     var D_Title = document.getElementById('m_title');
     var D_Message = document.getElementById('m_content');
 
-    if(MessageDialog.style.display == "none") {
-        D_Title.innerText = title;
-        D_Message.innerHTML = message;
-        MessageDialog.style.display = '';
-    }
-    else {
-        MessageDialog.style.display = 'none';
-    }
+    D_Title.innerText = title;
+    D_Message.innerHTML = message;
+    MessageDialog.showModal();
 }
 
-// e value : Select Item's ID (ex. gachonhall, collegeofit...)
+// Map Icon Click Event
+// e : Click Element's ID (ex. gachonhall, collegeofit....)
 function mapselects(e) {
     switch(e) {
         case 'gachonhall': 
             showMessage("가천관", "가천관이에요");
             break;
         case 'collegeofit':
-            alert("IT대학");
+            showMessage("IT융합대학", "IT융합대학");
             break; 
+        case 'visiontower':
+                showMessage("비전타워", "비전타워");
+            break;
         default:
-            alert(e);
+            showMessage(e, "id는 " + e);
             break;
     }
 }
