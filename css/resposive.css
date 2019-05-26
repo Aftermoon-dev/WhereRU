@@ -5,16 +5,27 @@ Made by Minjae Seon
 */
 
 @media screen and (max-width: 950px) {
-    #sideMenu {
-        height: 70% !important;
+    header img {
+        width: 100px;
+    }
+
+    #nav-hamburger {
+        margin-top: 2px;
+        vertical-align: middle;
+        font-size: 15pt;
+        color: white;
     }
 
     #sideMenu a {
         padding: 8px 8px 0px 16px;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     dialog {
         width: 45%;
+    }
+
+    #main_map svg {
+        display: relative;
     }
 }

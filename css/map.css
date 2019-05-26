@@ -9,16 +9,7 @@ Made by Minjae Seon
 }
 
 #main_map svg {
-    vertical-align: bottom;
     overflow: scroll;
     max-width: 80%;
     height: 30%;
-}
-
-@media screen and (max-width: 950px) {
-    #main_map svg {
-        overflow: scroll;
-        max-width: 100%;
-        max-height: 100%;
-    }
 }

@@ -14,11 +14,12 @@ body {
 }
 
 header {
+  z-index: 1;
   position: sticky;
   top: 0;
   right: 0;
   left: 0;
-  background-color: lightgreen;
+  background-color: black;
   opacity: 0.8;
 }
 
@@ -37,7 +38,8 @@ header a {
 header img {
   width: 200px;
   max-width: 100%;
-  padding-top: 8px;
+  margin-top: 8px;
+  margin-left: 8px;
 }
 
 nav a {
@@ -48,13 +50,18 @@ nav a {
   vertical-align: middle;
   font-size: 30pt;
   color: white;
+  margin-right: 5px;
+}
+
+main {
+  z-index: 3;
 }
 
 #sideMenu {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   right: 0;
   background-color: #111;
@@ -76,9 +83,6 @@ nav a {
   color: #f1f1f1;
 }
 
-main {
-  margin: 10px 0 10px 0;
-}
 
 dialog {
   overflow: auto;
