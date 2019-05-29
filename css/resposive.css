@@ -5,6 +5,9 @@ Made by Minjae Seon
 */
 
 @media screen and (max-width: 950px) {
+    header {
+        position: fixed;
+    }
     header img {
         width: 100px;
     }
@@ -22,6 +25,7 @@ Made by Minjae Seon
     }
 
     dialog {
+        position: fixed;
         width: 55%;
     }
     
@@ -31,6 +35,6 @@ Made by Minjae Seon
     }
 
     #main_map svg {
-        display: relative;
+        max-width: 2000px;
     }
 }
