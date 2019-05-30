@@ -5,12 +5,13 @@ Made by Minjae Seon
 */
 
 body {
-  background-color: white;
+  background-color: black;
   font-family: 'NanumBarunGothic', 'serif';
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 header {
@@ -19,7 +20,7 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  background-color: black;
+  background-color: white;
   opacity: 0.8;
 }
 
@@ -49,11 +50,13 @@ nav a {
 #nav-hamburger {
   vertical-align: middle;
   font-size: 30pt;
-  color: white;
+  color: black;
   margin-right: 5px;
 }
 
 main {
+  margin-top: 30px; 
+  margin-bottom: 30px;
   z-index: 3;
 }
 
