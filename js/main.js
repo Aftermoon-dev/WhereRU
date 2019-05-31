@@ -1,7 +1,7 @@
 ﻿/* Side Menu Script */
 
 // Div List Array
-var divlist = ['main_map', 'food', 'study','rest', 'shuttle'];
+var divlist = ['main_map', 'food', 'study', 'rest', 'shuttle'];
 
 // Main Sidemenu Open Function
 function mainside_show(divname) {
