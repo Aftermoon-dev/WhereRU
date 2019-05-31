@@ -19,14 +19,29 @@ Made by Minjae Seon
     }
 
     main {
-        margin-top: 50px;
+        margin-top: 80px;
         margin-bottom: 0;
     }
 
-    #sideMenu a {
+    #sideMenu_Button a {
         padding: 8px 8px 0px 16px;
         font-size: 15px;
     }
+
+    
+    #sideMenu_copyright {
+        font-size: 13px;
+        margin-top: 20px;
+        text-align: center;
+        color: #818181;
+        
+    }
+    
+    #sideMenu_copyright a {
+        color: #818181;
+        text-decoration: none !important; 
+    }
+  
 
     dialog {
         position: fixed;

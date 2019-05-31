@@ -84,6 +84,26 @@ function mapselects(e) {
             showMessage("교육대학원", 
                 "<img src='./img/school/edu.jpg' width='400' height='300'><br>구) 아름관<br>사회과학대학, 예술대학 학생들이 이용하며, 지하에는 식당과 매점이 있다.");
             break;
+        case 'dormitory':
+            showMessage("기숙사", 
+                "<img src='./img/school/domi.jpg' width='400' height='300'><br>학생들이 생활하는 공간으로, 제1, 제2학생생활관으로 이루어져 있다.");
+            break;
+        case 'studenthall':
+            showMessage("학생회관", 
+                "<img src='./img/school/studenthall.jpg' width='400' height='300'><br>총학생회와 동아리실이 있는 건물이다.");
+            break;
+        case 'centrallib':
+            showMessage("중앙도서관", 
+                "<img src='./img/school/centrallib.jpg' width='400' height='300'><br>가천대학교의 중앙도서관이다. 각종 열람실 및 매점, 스터디룸이 있다.");
+            break;
+        case 'collegeofbionano':
+            showMessage("바이오나노대학", 
+                "<img src='./img/school/bionanocollege.jpg' width='400' height='300'><br>구) 진리관<br>바이오나노대학 학생들이 주로 이용하며, 지하에 동아리실이 있다.");
+            break;
+        case 'collegeofkm':
+            showMessage("한의과대학", 
+                "<img src='./img/school/collegeofkm.jpg' width='400' height='300'><br>구) 미래2관<br>한의과대학 학생들이 주로 이용한다.");
+            break;
         default:
             showMessage(e, "id는 " + e);
             break;

@@ -5,7 +5,7 @@ Made by Minjae Seon
 */
 
 body {
-  background-color: black;
+  background-color: rgb(43, 43, 43);
   font-family: 'NanumBarunGothic', 'serif';
   width: 100%;
   height: 100%;
@@ -73,17 +73,30 @@ main {
   padding-top: 60px;
 }
 
-#sideMenu a {
+#sideMenu_Button a  {
   padding: 8px 8px 0px 32px;
+  display: block;
+  transition: 0.3s;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
-  display: block;
-  transition: 0.3s;
 }
 
 #sideMenu a:hover {
   color: #f1f1f1;
+}
+
+#sideMenu_copyright {
+  font-size: 10px;
+  margin-top: 20px;
+  text-align: center;
+  color: #818181;
+  
+}
+
+#sideMenu_copyright a {
+  color: #818181;
+  text-decoration: none !important; 
 }
 
 dialog {
@@ -95,4 +108,21 @@ dialog {
 
 dialog button {
   float: right;
+}
+
+#rest {
+  text-align: center;
+}
+
+.newwindow_button {
+  background-color: rgb(127, 200, 224);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px; 
+  border: 1px solid rgb(127, 200, 224);
 }
