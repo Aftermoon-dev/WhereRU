@@ -2,6 +2,7 @@
     // Shuttle Image Auto-Slide
     setInterval('slide("shuttle_pos")', 5000);
     setInterval('slide("pas_pos")', 5000);
+    setInterval('slide("two_pos")', 5000);
 }
 
 // Div List Array
