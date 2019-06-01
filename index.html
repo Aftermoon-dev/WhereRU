@@ -4,8 +4,8 @@
         <title>가천대학교 WhereRU</title>
         <meta name="author" content="강건영, 권민우, 선민재">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/map.css">
         <link rel="stylesheet" type="text/css" href="css/resposive.css">
+        <link rel="stylesheet" type="text/css" href="css/shuttle.css">
         <script src="js/main.js"></script>
         <link rel="shortcut icon" href="img/favicon.ico">
         <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -31,8 +31,8 @@
                 <a id="closeBtn" onclick="openMenu()">&times;</a>
                 <a onclick="mainside_show('main_map')">메인</a>
                 <a onclick="mainside_show('food')">식당</a>
-                <a onclick="mainside_show('study')">스터디룸</a>
-                <a onclick="mainside_show('rest')">휴게시설</a>
+                <a onclick="mainside_show('cafe')">카페</a>
+                <a onclick="mainside_show('store')">편의점</a>
                 <a onclick="mainside_show('shuttle')">무당이 시간표</a>
             </div>
             <div id="sideMenu_copyright">
@@ -41,7 +41,7 @@
         </nav>
 
         <main>
-            <article id="main_map">
+            <section id="main_map">
                 <svg
                     xmlns:dc="http://purl.org/dc/elements/1.1/"
                     xmlns:cc="http://creativecommons.org/ns#"
@@ -353,26 +353,58 @@
                     onmouseover="this.style.opacity=1"
                     onmouseout="this.style.opacity=0" />
                 </svg>
-            </article>
+            </section>
 
-            <article id="food" style="display: none;">
-                Food
-            </article>
+            <section id="food" style="display: none;">
+                
+            </section>
 
-            <article id="study" style="display: none;">
-                Study
-            </article>
+            <section id="cafe" style="display: none;">
+                
+            </section>
+
+            <section id="store" style="display: none;">
+                
+            </section>
             
-            <article id="rest" style="display: none;">
-                <h3 color="white">확인할 휴게시설 종류를 클릭해주세요!</h3>
-                <button id="cafe" class="newwindow_button">카페</button>
-                <button id="store" class="newwindow_button">편의점</button>
-                <button id="restarea" class="newwindow_button">휴게실</button>
-            </article>
-
-            <article id="shuttle" style="display: none;">
-                Shuttle
-            </article>
+            <section id="shuttle" style="display: none;">
+                <header id="shuttle_header">
+                    <img src="./img/shuttle/ladybug_bus.png">
+                </header>
+                <article id="shuttle_image">
+                    <input type="radio" name="shuttle_pos" id="shuttle_pos1" checked>
+                    <input type="radio" name="shuttle_pos" id="shuttle_pos2">
+                    <input type="radio" name="shuttle_pos" id="shuttle_pos3">
+                    <ul>
+                        <li><img src="./img/shuttle/상행노선1.jpg" width="80%"></li>
+                        <li><img src="./img/shuttle/하행노선1.jpg" width="80%"></li>
+                        <li><img src="./img/shuttle/시간표1.jpg" width="80%"></li>
+                    </ul>
+                    <p class="shuttle_p">
+                        <label for="shuttle_pos1"></label>
+                        <label for="shuttle_pos2"></label>
+                        <label for="shuttle_pos3"></label>
+                    </p>
+                </article>
+                <article id="shuttle_content">
+                    <h3>노선<span style="font-size : 15px;">(그림참고)</span></h3>
+                    <blockquote>
+                        상행노선 정류장 : IT대학 - 교육대학원 - 학생회관 - 운동장<br>
+                        하행노선 정류장 : 운동장 - 학생회관 - 교육대학원 - 예술대학1 - 글로벌센터 - IT대학<br>
+                    </blockquote>
+                    <br>
+                    <h3>무당이 시간표<span style="font-size : 15px;">(그림참고)</span></h3>
+                    <blockquote>
+                        첫차 시간 : 8시 40분<br>
+                        막차 시간 : 5시 15분<br>
+                        점심 시간 : 11시 45분 ~ 1시<br>
+                        1교시(9시) 이전 : 배차간격이 4분임<br>
+                        평균 배차간격 : 15분<br>
+                    </blockquote>
+                    <img src="./img/shuttle/무당이.png" width=20% style="margin-top : 30px;">
+                    <img src="./img/shuttle/무당이 정거장.jpg" width=20% style="margin : 30px 0px 0px 30px;">
+                </article>
+            </section>
         </main>
         
         <dialog id="message">

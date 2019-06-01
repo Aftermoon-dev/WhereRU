@@ -1,10 +1,10 @@
 /*
-Resposive StyleSheet
-Gachon Univ. Department of Software 2019-1 Major Course 'Web Programming' Project
-Made by Minjae Seon
+    Resposive StyleSheet
+    Gachon Univ. Department of Software 2019-1 Major Course 'Web Programming' Project
+    Made by Minjae Seon
 */
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 450px) {
     header {
         position: fixed;
     }
@@ -30,7 +30,7 @@ Made by Minjae Seon
 
     
     #sideMenu_copyright {
-        font-size: 13px;
+        font-size: 10px;
         margin-top: 20px;
         text-align: center;
         color: #818181;
@@ -42,7 +42,6 @@ Made by Minjae Seon
         text-decoration: none !important; 
     }
   
-
     dialog {
         position: fixed;
         width: 55%;
@@ -56,4 +55,5 @@ Made by Minjae Seon
     #main_map svg {
         max-width: 2000px;
     }
+
 }

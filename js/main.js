@@ -1,10 +1,14 @@
-﻿/* Side Menu Script */
+﻿window.onload = function() {
+    // Shuttle Image Auto-Slide
+    setInterval('slide("shuttle_pos")', 5000);
+}
 
 // Div List Array
-var divlist = ['main_map', 'food', 'study', 'rest', 'shuttle'];
+var divlist = ['main_map', 'food', 'shuttle'];
 
 // Main Sidemenu Open Function
 function mainside_show(divname) {
+    openMenu();
     // Get All Array's Element
     for(var i = 0; i < divlist.length; i++) {
         // if divname in divlist
@@ -29,11 +33,11 @@ function openMenu() {
     var sidemenu = document.getElementById('sideMenu');
 
     // Check Screen Size
-    var mq = window.matchMedia('screen and (max-width:950px)');
+    var mq = window.matchMedia('screen and (max-width:450px)');
 
     // If, not open sideMenu
     if(!sopen) {
-        // If, not max-width:950px (PC)
+        // If, not PC
         if(mq.matches == false) {
             // Set sideMenu Width
             sidemenu.style.width = "250px";
@@ -41,7 +45,7 @@ function openMenu() {
         // If not (Mobile)
         else {
             // Set sideMenu Width
-            sidemenu.style.width = "100px";
+            sidemenu.style.width = "150px";
         }
         sopen = true;
     }
@@ -107,5 +111,21 @@ function mapselects(e) {
         default:
             showMessage(e, "id는 " + e);
             break;
+    }
+}
+
+// Image Auto Slide
+function slide(posname) {
+    var slide = document.getElementsByName(posname);
+    for(var i = 0; i < slide.length; i++) {
+        if(slide[i].checked == true) {
+            if(i == slide.length-1) {
+                slide[0].checked = true;
+            }
+            else {
+                slide[i+1].checked = true;
+            }
+            break;
+        }
     }
 }
