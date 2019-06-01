@@ -127,8 +127,7 @@ function mapselects(e) {
                 "<img src='./img/school/collegeofkm.jpg' width='400' height='300'><br>구) 미래2관<br>한의과대학 학생들이 주로 이용한다.");
             break;
         default:
-            showMessage(e, "id는 " + e);
-            break;
+            showMessage("정보 없음", "관리자가 정보를 등록하지 않았습니다.");
     }
 }
 

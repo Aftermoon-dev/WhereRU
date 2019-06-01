@@ -74,6 +74,10 @@
         display: none;
     }
 
+    #two_image{
+        display: none;
+    }
+
     #shuttle_image_mobile {
         text-align: center;
         display: block;
