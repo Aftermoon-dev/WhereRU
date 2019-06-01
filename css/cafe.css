@@ -1,0 +1,9 @@
+#cafe_header { 
+    background-color: white;
+    opacity: 0.8;
+    margin-bottom: 50px;
+}
+
+#cafe_header img {
+    margin-left: 20px;
+}

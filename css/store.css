@@ -1,0 +1,9 @@
+#store_header { 
+    background-color: white;
+    opacity: 0.8;
+    margin-bottom: 50px;
+}
+
+#store_header img {
+    margin-left: 20px;
+}
