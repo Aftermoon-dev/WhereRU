@@ -7,7 +7,7 @@
 #shuttle_header { 
     background-color: white;
     opacity: 0.8;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 #shuttle_header img {
@@ -15,11 +15,11 @@
 }
 
 #shuttle_content {
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 #shuttle_image ul,li {
-    list-style:none;
+    list-style: none;
 }
 
 #shuttle_image {

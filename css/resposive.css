@@ -5,10 +5,11 @@
 */
 
 @media screen and (max-width: 450px) {
-    header {
+    #main_header {
         position: fixed;
     }
-    header img {
+
+    #main_header img {
         width: 100px;
     }
 
@@ -19,7 +20,7 @@
     }
 
     main {
-        margin-top: 80px;
+        margin-top: 30px;
         margin-bottom: 0;
     }
 
@@ -56,4 +57,25 @@
         max-width: 2000px;
     }
 
+    #shuttle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #shuttle_image {
+        display: none;
+    }
+
+    #shuttle_content img{
+        display: none;
+    }
+
+    #pas_image{
+        display: none;
+    }
+
+    #shuttle_image_mobile {
+        text-align: center;
+        display: block;
+    }
 }

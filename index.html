@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="css/shuttle.css">
         <link rel="stylesheet" type="text/css" href="css/cafe.css">
         <link rel="stylesheet" type="text/css" href="css/store.css">
+        <link rel="stylesheet" type="text/css" href="css/study.css">
         <script src="js/main.js"></script>
         <link rel="shortcut icon" href="img/favicon.ico">
         <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -18,22 +19,43 @@
     </head>
 
     <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
-        <header>
-            <div id="header_content">
+        <div id="header">
+            <header id="main_header">
                 <a href="https://gachon-aplus.github.io/WhereRU">   
                     <img src="img/whereru.png" alt="WhereRU Logo">
                 </a>
                 <div id="nav-hamburger" onclick="openMenu()">
                         &#9776;
                 </div>
-            </div>
-        </header>
+            </header>
+
+            <header id="food_header" class="subheader" style="display: none;">
+                <img src="./img/food/food.png">
+            </header>
+
+            <header id="study_header" class="subheader" style="display: none;">
+                <img src="./img/study/studyroom.png">
+            </header>
+
+            <header id="cafe_header" class="subheader" style="display: none;">
+                <img src="./img/cafe/cafe.png">
+            </header>
+
+            <header id="store_header" class="subheader" style="display: none;">
+                <img src="./img/store/store.png">
+            </header>
+
+            <header id="shuttle_header" class="subheader" style="display: none;">
+                <img src="./img/shuttle/ladybug_bus.png">
+            </header>
+        </div>
 
         <nav id="sideMenu">
             <div id="sideMenu_Button">
                 <a id="closeBtn" onclick="openMenu()">&times;</a>
                 <a onclick="mainside_show('main_map')">메인</a>
                 <a onclick="mainside_show('food')">식당</a>
+                <a onclick="mainside_show('study')">스터디룸</a>
                 <a onclick="mainside_show('cafe')">카페</a>
                 <a onclick="mainside_show('store')">편의점</a>
                 <a onclick="mainside_show('shuttle')">무당이 시간표</a>
@@ -362,28 +384,156 @@
                 
             </section>
 
+            <section id="study" style="display: none;">
+                <article id="study_content">
+                    <div class="studyroom_content">
+                        <h3>라곰</h3>
+                        <ul>
+                            <li><span class="bold">위치</span> : 가천관 1층</li>
+                            <li><span class="bold">운영시간</span><br>
+                                학기중 - 09:00 ~ 19:00<br>
+                                방학중 - 09:00 ~ 17:00</li>
+                        </ul>
+                        <img src="./img/study/라곰.jpg" width=200 height=200>
+                    </div>
+                    <div class="studyroom_content">
+                        <h3>유레카</h3>
+                        <ul>
+                            <li><span class="bold">위치</span> : 중앙도서관 2층</li>
+                            <li><span class="bold">운영시간</span><br>
+                                학기중 - 09:00 ~ 21:00<br>
+                                방학중 - 09:00 ~ 17:00</li>
+                        </ul>
+                        <img src="./img/study/유레카.jpg" width=200 height=200>
+                    </div>
+                    <div class="studyroom_content">
+                        <h3>자작나무 라운지</h3>
+                        <ul>
+                            <li><span class="bold">위치</span> : 전자정보 도서관 B1층</li>
+                            <li><span class="bold">운영시간</span><br>
+                                학기중 - 09:00 ~ 21:00<br>
+                                방학중 - 09:00 ~ 17:00</li>
+                        </ul>
+                        <img src="./img/study/자작나무.jpg" width=200 height=200>
+                    </div>
+                    <div class="studyroom_content">
+                        <h3>비전타워 휴게실</h3>
+                        <ul>
+                            <li><span class="bold">위치</span> : 비전타워 1층</li>
+                            <li><span class="bold">운영시간</span><br>
+                                학기중 - 09:00 ~ 19:00<br>
+                                방학중 - 09:00 ~ 17:00</li>
+                        </ul>
+                        <img src="./img/study/비타휴게실.jpg" width=200 height=200>
+                    </div>
+                    <div class="studyroom_content">
+                        <h3>G.space</h3>
+                        <ul>
+                            <li><span class="bold">위치</span> : 글로벌 센터 2층</li>
+                            <li><span class="bold">운영시간</span><br>
+                                학기중 - 09:00 ~ 19:00<br>
+                                방학중 - 09:00 ~ 17:00</li>
+                        </ul>
+                        <img src="./img/study/지스페이스.jpg" width=200 height=200>
+                    </div>
+                    <div class="studyroom_content">
+                        <h3>IT 융합대학 스터디룸</h3>
+                        <ul>
+                            <li><span class="bold">예약</span> : 카톡플러스 친구</li>
+                            <li><span class="bold">운영시간</span><br>
+                                화요일 - 11:00 ~ 17:00<br>
+                                수요일 - 13:00 ~ 17:00<br>
+                                목요일 - 13:00 ~ 17:00<br>
+                                수요일 - 09:00 ~ 17:00<br></li>
+                            <li><span class="bold">위치</span><br>
+                                화&수 : 505호<br>
+                                목&금 : 505호,506호</li>
+                        </ul>
+                        <img src="./img/study/아이티.jfif" width=200 height=200>
+                    </div>
+                </article>
+            </section>
+
             <section id="cafe" style="display: none;">
-                <header id="cafe_header">
-                    <img src="./img/cafe/cafe.png">
-                </header>
-                <article id="shuttle_content">
-                    
+                <article id="cafe_content">
+                    <div id="pascucci">
+                        <img src="./img/cafe/파스쿠치_글씨.jpg" width=20%>
+                            <p>
+                                영업 시간 : 오전 9시~ 오후 11시
+                                <br>   
+                                특징 : IT대학과 가까워 편리하게 이용 가능함, 가격이 싸지는 않다.
+                                <br>
+                                위치 : IT대학 맞은편 편의점 오른쪽
+                            </p>
+                            <h3><a onclick="clicks('pascucci','price_p')"><strong>#Menu#</strong></a></h3>
+                        </div>
+                        <div id="price_p" style="display: none;">
+                            <h2>가격표</h2>
+                            <div id="pas_image">
+                                <div id="pas_slide"  style="float : right;">
+                                    <input type="radio" name="pas_pos" id="pas_pos1" checked>
+                                    <input type="radio" name="pas_pos" id="pas_pos2">
+                                    <input type="radio" name="pas_pos" id="pas_pos3">
+                                    <input type="radio" name="pas_pos" id="pas_pos4">
+                                    <ul>
+                                        <li><img src="./img/cafe/파스쿠치_가천.jpg" width="85%"></li>
+                                        <li><img src="./img/cafe/흑당밀크티.png" width="70%"></li>
+                                        <li><img src="./img/cafe/딸기빙수.png" width="85%"></li>
+                                        <li><img src="./img/cafe/아포가또.png" width="85%"></li>                               
+                                    </ul>
+                                    <p class="pas_pos">
+                                        <label for="pas_pos1"></label>
+                                        <label for="pas_pos2"></label>
+                                        <label for="pas_pos3"></label>
+                                        <label for="pas_pos4"></label>
+                                    </p>
+                                </div>   
+                            </div>
+                            <div id="pas_content">
+                                <h3>Coffee</h3>
+                                <blockquote>
+                                    에스프레소 : 3.3 <br>
+                                    아메리카노 : 4.0<br>
+                                    카페라떼 : 4.5<br>
+                                    카푸치노 : 4.5<br>
+                                    카페모카 : 5.0<br>
+                                    콜드브루 : 4.5<br>
+                                    로마노 : 5.0<br>
+                                    샤케라또 : 4.8<br> 
+                                    모카포트 아포가또 : 6.8<br>                 
+                                </blockquote>                                                                            
+                                <h3>Beverage</h3>
+                                <blockquote>
+                                    흑당 펄 라떼 : 5.8<br>
+                                    흑당 펄 밀크티 : 5.5<br>
+                                    요거딸기빙산 빙수 : 14.0<br>
+                                    흑당이달고나빙산 빙수 : 14.0<br>
+                                    히비스커스 페어 크러쉬 : 5.9<br>               
+                                </blockquote>  
+                                            
+                                <h3>Food</h3>
+                                <blockquote>
+                                    떠먹는 까사링고 : 13.0<br>
+                                    까사링고 티라미수 : 6.0<br>
+                                    스트로베리 타르트 : 5.8<br>
+                                    레드벨벳 케익 : 6.5<br>
+                                    초코 밀크푸딩무스 : 5.0<br>                        
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="twosomeplace">
+                    </div>
                 </article>
             </section>
 
             <section id="store" style="display: none;">
-                <header id="store_header">
-                    <img src="./img/store/store.png">
-                </header>
                 <article id="store_content">
                     
                 </article>
             </section>
             
             <section id="shuttle" style="display: none;">
-                <header id="shuttle_header">
-                    <img src="./img/shuttle/ladybug_bus.png">
-                </header>
                 <article id="shuttle_image">
                     <input type="radio" name="shuttle_pos" id="shuttle_pos1" checked>
                     <input type="radio" name="shuttle_pos" id="shuttle_pos2">
@@ -416,6 +566,11 @@
                     </blockquote>
                     <img src="./img/shuttle/무당이.png" width=20% style="margin-top : 30px;">
                     <img src="./img/shuttle/무당이 정거장.jpg" width=20% style="margin : 30px 0px 0px 30px;">
+                </article>
+                <article id="shuttle_image_mobile">
+                        <img src="./img/shuttle/상행노선1.jpg" width="80%"></li>
+                        <img src="./img/shuttle/하행노선1.jpg" width="80%"></li>
+                        <img src="./img/shuttle/시간표1.jpg" width="80%"></li>
                 </article>
             </section>
         </main>

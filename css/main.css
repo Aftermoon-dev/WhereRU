@@ -17,7 +17,6 @@ body {
 
 header {
   z-index: 1;
-  position: sticky;
   top: 0;
   right: 0;
   left: 0;
@@ -25,7 +24,8 @@ header {
   opacity: 0.8;
 }
 
-#header_content {
+#main_header {
+  position: sticky;
   opacity: 1.0;
   display: flex;
   vertical-align: middle;
@@ -33,11 +33,15 @@ header {
   justify-content: space-between;
 }
 
-header a {
+.subheader {
+  position: initial;  
+}
+
+#header a {
   text-decoration: none;
 }
 
-header img {
+#header img {
   width: 200px;
   max-width: 100%;
   margin-top: 8px;
@@ -98,7 +102,7 @@ main {
 }
 
 #sideMenu_copyright {
-  font-size: 10px;
+  font-size: 15px;
   margin-top: 20px;
   text-align: center;
   color: #818181;
@@ -136,4 +140,12 @@ dialog button {
   font-size: 16px;
   border-radius: 8px; 
   border: 1px solid rgb(127, 200, 224);
+}
+
+#shuttle_image {
+  display: block;
+}
+
+#shuttle_image_mobile {
+  display: none;
 }

@@ -1,26 +1,37 @@
 ﻿window.onload = function() {
     // Shuttle Image Auto-Slide
     setInterval('slide("shuttle_pos")', 5000);
+    setInterval('slide("pas_pos")', 5000);
 }
 
 // Div List Array
-var divlist = ['main_map', 'food', 'cafe', 'store', 'shuttle'];
+var divlist = ['main_map', 'food', 'cafe', 'study', 'store', 'shuttle'];
 
 // Main Sidemenu Open Function
 function mainside_show(divname) {
     openMenu();
     // Get All Array's Element
+    var mq = window.matchMedia('screen and (max-width:450px)');
     for(var i = 0; i < divlist.length; i++) {
         // if divname in divlist
         if(divname == divlist[i]) {
             // Show Div
             changeBackground('./img/' + divlist[i] + '.jpg');
-            document.getElementById(divname).style.display = "";
+            document.getElementById(divname).style.display = "block";
+
+            if(divname != 'main_map') {
+                if(mq.matches == false) {
+                    document.getElementById(divname + "_header").style.display = "block";
+                }
+            }
         }
         // if not
         else {
             // Other Hide Div 
             document.getElementById(divlist[i]).style.display = "none";
+            if(divlist[i] != 'main_map') { 
+                document.getElementById(divlist[i] + "_header").style.display = "none";
+            }
         }
     }
 }
@@ -134,4 +145,20 @@ function slide(posname) {
             break;
         }
     }
+}
+
+// Cafe Menu Click Event
+var open = false; 
+function clicks(cdiv, pdiv) {
+    var price = document.getElementById(pdiv);
+    var content = document.getElementById(cdiv);
+                
+    if(price.style.display == 'none') {
+        content.style.display = 'block';
+        price.style.display = 'block';
+    }
+    else {
+        content.style.display = 'fixed';
+        price.style.display = 'none';
+    }  
 }
