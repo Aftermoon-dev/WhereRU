@@ -4,7 +4,7 @@
 }
 
 // Div List Array
-var divlist = ['main_map', 'food', 'shuttle'];
+var divlist = ['main_map', 'food', 'cafe', 'store', 'shuttle'];
 
 // Main Sidemenu Open Function
 function mainside_show(divname) {
@@ -14,6 +14,7 @@ function mainside_show(divname) {
         // if divname in divlist
         if(divname == divlist[i]) {
             // Show Div
+            changeBackground('./img/' + divlist[i] + '.jpg');
             document.getElementById(divname).style.display = "";
         }
         // if not
@@ -22,6 +23,11 @@ function mainside_show(divname) {
             document.getElementById(divlist[i]).style.display = "none";
         }
     }
+}
+
+// Change Background Image
+function changeBackground(bgurl) {
+    document.body.style.background = 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(' + bgurl + ')';
 }
 
 // Side Menu Open Check Variable
