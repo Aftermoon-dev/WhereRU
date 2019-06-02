@@ -3,19 +3,20 @@
     <head>
         <title>가천대학교 WhereRU</title>
         <meta name="author" content="강건영, 권민우, 선민재">
+        <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/resposive.css">
         <link rel="stylesheet" type="text/css" href="css/shuttle.css">
         <link rel="stylesheet" type="text/css" href="css/cafe.css">
         <link rel="stylesheet" type="text/css" href="css/store.css">
         <link rel="stylesheet" type="text/css" href="css/study.css">
+        <link rel="stylesheet" type="text/css" href="css/food.css">
         <script src="js/main.js"></script>
         <link rel="shortcut icon" href="img/favicon.ico">
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <meta property="og:title" content="WhereRU">
         <meta property="og:description" content="가천대학교의 캠퍼스를 둘러보세요!">
         <meta property="og:image" content="https://gachon-aplus.github.io/WhereRU/img/campus_global.png">
-        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
     </head>
 
     <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
@@ -381,7 +382,351 @@
             </section>
 
             <section id="food" style="display: none;">
+                <article id="food_type">
+                    <input type="checkbox" id="food_all" onchange="showFood('all')" checked>
+                    <span>전체보기</span>
+                    <input type="checkbox" name="food_check" id="food_korean" onchange="showFood('korean')">
+                    <span>한식</span>
+                    <input type="checkbox" name="food_check" id="food_flour" onchange="showFood('flour')">
+                    <span>분식</span>
+                    <input type="checkbox" name="food_check" id="food_japanese" onchange="showFood('japanese')">
+                    <span>일식</span>
+                    <input type="checkbox" name="food_check" id="food_western" onchange="showFood('western')">
+                    <span>양식</span>
+                    <input type="checkbox" name="food_check" id="food_chinese" onchange="showFood('chinese')">
+                    <span>중식</span>
+                    <input type="checkbox" name="food_check" id="food_cutlet" onchange="showFood('cutlet')">
+                    <span>돈까스</span>
+                    <input type="checkbox" name="food_check" id="food_dosirak" onchange="showFood('dosirak')">
+                    <span>도시락</span>
+                    <input type="checkbox" name="food_check" id="food_etc" onchange="showFood('etc')">
+                    <span>기타</span>
+                </article>
+                <article id="food_store">
+                    <div class="foodstore korean" onclick="food_clicks('내가찜한닭')">
+                        <img src="./img/food/내가찜한닭.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>내가찜한닭</p>
+                        <span id="내가찜한닭" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 내가찜한닭</h3>
+                            <blockquote>
+                                <p>경원프라자 지하 4층에 위치한 찜닭</p>
+                                <p>맵게 먹고 싶은 사람들을 위해 맵기 조절도 가능하다</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('돈돈이네')">
+                        <img src="./img/food/돈돈이네.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>돈돈이네</p>
+                        <span id="돈돈이네" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 돈돈이네</h3>
+                            <blockquote>
+                                <p>무료로 조개탕이 나오는 백반집</p>
+                                <p>가천대학교에서 동서울대쪽 방향에 위치해있다</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('돈마니')">
+                        <img src="./img/food/돈마니.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>돈마니</p>
+                        <span id="돈마니" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 돈마니</h3>
+                            <blockquote>
+                                <p>가성비 최고의 삼겹살집</p>
+                                <p>4500원에 삼겹살을 맛볼수 있다고?!</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('맘보')">
+                        <img src="./img/food/맘보.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>맘보</p>
+                        <span id="맘보" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 맘보</h3>
+                            <blockquote>
+                                <p>비전타워에 있는 직화덮밥집</p>
+                                <p>밥도 국도 반찬도 무한리필!!</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('바우골')">
+                        <img src="./img/food/바우골.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>바우골</p>
+                        <span id="바우골" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 바우골</h3>
+                            <blockquote>
+                                <p>점심시간에 5천원으로 즐길 수 있는 백반 집</p>
+                                <p>태평돈가스 아래에 위치해있다</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('밥집')">
+                        <img src="./img/food/밥집.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>밥집</p>
+                        <span id="밥집" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 밥집</h3>
+                            <blockquote>
+                                <p>다양한 메뉴의 한식집</p>
+                                <p>6000원에 맛있는 집밥을 즐길 수 있다</p>
+                                <p>정식이 매일매일 바뀌어서 질릴 수가 없다!!</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('싸가집')">
+                        <img src="./img/food/싸가집.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>싸고가장맛있는집</p>
+                        <span id="싸가집" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 싸고가장맛있는집</h3>
+                            <blockquote>
+                                <p>가천대학교에서 태평쪽 방향에 위치해있다</p>
+                                <p>가천대학교 근처에서 볼 수 있는 김밥천국과 비슷?</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('싸움의고수')">
+                        <img src="./img/food/싸움의고수.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>싸움의 고수</p>
+                        <span id="싸움의고수" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 싸움의 고수</h3>
+                            <blockquote>
+                                <p>삼겹살을 1인분만 먹을 수 있다고?</p>
+                                <p>혼밥이 가능한 1인 보쌈, 삼겹살 집</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('알촌')">
+                        <img src="./img/food/알촌.jfif" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>알촌</p>
+                        <span id="알촌" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 알촌</h3>
+                            <blockquote>
+                                <p>저렴하게 다양한 토핑의 알밥을 즐길 수 있습니다</p>
+                                <p>지금까지 이런 알밥은 없었다 지금 바로 알촌으로!!</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('오늘오면')">
+                        <img src="./img/food/오늘오면.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>오늘오면</p>
+                        <span id="오늘오면" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 오늘오면</h3>
+                            <blockquote>
+                                <p>비전타워에 위치한 국수집</p>
+                                <p>오늘의 메뉴도 있고 쿠폰도 준다?!</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('원조태평동곱창')">
+                        <img src="./img/food/원조태평동곱창.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>원조태평동곱창</p>
+                        <span id="원조태평동곱창" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 원조태평동곱창</h3>
+                            <blockquote>
+                                <p>오늘은 곱창먹고 싶은 날?</p>
+                                <p>저렴하고 맛있는 곱창집 '원조태평동곱창'</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('전주식당')">
+                        <img src="./img/food/전주식당.jfif" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>전주식당</p>
+                        <span id="전주식당" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 전주식당</h3>
+                            <blockquote>
+                                <p>13년 전통을 지닌 맛집</p>
+                                <p>순두부찌개,된장찌개가 먹고싶다? 그러면 바로 가야죠</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('좋은물고기')">
+                        <img src="./img/food/좋은물고기.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>좋은물고기</p>
+                        <span id="좋은물고기" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 좋은물고기</h3>
+                            <blockquote>
+                                <p>생선이 먹고싶다?</p>
+                                <p>생선구이가 맛있는 생선요리 전문점</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('준호네부대찌개')">
+                        <img src="./img/food/준호네부대찌개.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>준호네 부대찌개</p>
+                        <span id="준호네부대찌개" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 준호네 부대찌개</h3>
+                            <blockquote>
+                                <p>가천대역 2번출구 근처에 있는 부대찌개집</p>
+                                <p>감자와 음료수도 무한리필!</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('쩡이순대국')">
+                        <img src="./img/food/쩡이순대국.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>쩡이순대국</p>
+                        <span id="쩡이순대국" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 쩡이순대국</h3>
+                            <blockquote>
+                                <p>주모 여기 순대국 한 사발 주이소~~</p>
+                                <p>해장은 이곳에서!</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('치즈밥있슈')">
+                        <img src="./img/food/치즈밥있슈.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>치즈밥있슈</p>
+                        <span id="치즈밥있슈" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 치즈밥있슈</h3>
+                            <blockquote>
+                                <p>가천관 지하 1층에 위치한 식당</p>
+                                <p>치즈덕후들을 위한 치즈밥 식당</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('친친')">
+                        <img src="./img/food/친친.png" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>친친</p>
+                        <span id="친친" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 친친</h3>
+                            <blockquote>
+                                <p>동서울대 근처에 있는 고깃집</p>
+                                <p>점심시간에 가기에는 거리가 무리일수도 있겠다</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore korean" onclick="food_clicks('포크포크')">
+                        <img src="./img/food/포크포크.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>포크포크</p>
+                        <span id="포크포크" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 포크포크</h3>
+                            <blockquote>
+                                <p>돈까스에 냉면을 먹고 싶다</p>
+                                <p>밥도 무한리필!!</p>
+                            </blockquote>
+                        </span>
+                    </div>
+
+                    <div class="foodstore flour" onclick="food_clicks('걸작떡볶이')">
+                        <img src="./img/food/걸작떡볶이.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>걸작떡볶이</p>
+                        <span id="걸작떡볶이" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 걸작떡볶이</h3>
+                            <blockquote>
+                                <p>치킨떡볶이 세트를 즐길 수 있다?!</p>
+                                <p>가천대학교 근처 소문난 성남 분식집!!</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore flour" onclick="food_clicks('경원분식')">
+                        <img src="./img/food/경원분식.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>경원분식</p>
+                        <span id="경원분식" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 경원분식</h3>
+                            <blockquote>
+                                <p>가천대가 경원대 시절부터 살아있었던 분식집</p>
+                                <p>가격도 미쳐버릴 정도로 저렴한 분식집</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore flour" onclick="food_clicks('엉터리분식')">
+                        <img src="./img/food/엉터리분식.jfif" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>엉터리분식</p>
+                        <span id="엉터리분식" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 엉터리분식</h3>
+                            <blockquote>
+                                <p>엄청나게 많은 메뉴를 자랑한다</p>
+                                <p>태평쪽 분식집, 엉터리분식</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore flour" onclick="food_clicks('쩡이네')">
+                        <img src="./img/food/쩡이네.jpeg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>쩡이네</p>
+                        <span id="쩡이네" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 쩡이네</h3>
+                            <blockquote>
+                                <p>가천대학교 안에 있는 최고의 분식집</p>
+                                <p>너무 장사가 잘돼서 두 집으로 나누어져 있다!</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore flour" onclick="food_clicks('그집김밥')">
+                        <img src="./img/food/그집김밥.jfif" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>그집김밥</p>
+                        <span id="그집김밥" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 그집김밥</h3>
+                            <blockquote>
+                                <p>가천대역 1번 출구를 지나서 볼 수 있는 맛집</p>
+                                <p>소박해 보이는 음식점에서 고급스런 김밥천국을 느낄 수 있다?!</p>
+                            </blockquote>
+                        </span>
+                    </div>
+
+                    <div class="foodstore japanese" onclick="food_clicks('스타동')">
+                        <img src="./img/food/스타동.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>스타동</p>
+                        <span id="스타동" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 스타동</h3>
+                            <blockquote>
+                                <p>최고의 수제돈까스집</p>
+                                <p>다양한 메뉴여서 질리지도 않는다!!</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore japanese" onclick="food_clicks('아토')">
+                        <img src="./img/food/아토.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>아토</p>
+                        <span id="아토" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 아토</h3>
+                            <blockquote>
+                                <p>저렴한 점심을 고급스런 맛집에서?!</p>
+                                <p>회덮밥과 알밥을 맛볼 수 있다</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore japanese" onclick="food_clicks('야미가')">
+                        <img src="./img/food/야미가.png" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>야미가</p>
+                        <span id="야미가" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 야미가</h3>
+                            <blockquote>
+                                <p>지금까지 이런 일식집은 없었다</p>
+                                <p>간이음식점 야미가!</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore japanese" onclick="food_clicks('육연차')">
+                        <img src="./img/food/육연차.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>육연차</p>
+                        <span id="육연차" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 육연차</h3>
+                            <blockquote>
+                                <p>경원프라자 지하에서 만날 수 있다</p>
+                                <p>육회/연어/차슈 덮밥을 맛볼 수 있는 식당</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore japanese" onclick="food_clicks('혼다라멘')">
+                        <img src="./img/food/혼다라멘.jpg" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>혼다라멘</p>
+                        <span id="스타동" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 혼다라멘</h3>
+                            <blockquote>
+                                <p>맛있다고 소문은 들린다!!</p>
+                                <p>하지만 요즘은 문을 여는 날을 볼 수가 없다고 한다</p>
+                            </blockquote>
+                        </span>
+                    </div>
+                    <div class="foodstore japanese" onclick="food_clicks('오니기리와이규동')">
+                        <img src="./img/food/오니기리와이규동.jfif" width="180px" height="150px" style="margin: 7px 10px 0px 10px;">
+                        <p>오니기리와 이규동</p>
+                        <span id="오니기리와이규동" class="storeinfo" width="1000px" height="150px" style="margin: 10 10 10 50; display:none;">
+                            <h3>▷ 오니기리와 이규동</h3>
+                            <blockquote>
+                                <p>오니기리와 규동을 맛볼 수 있다</p>
+                                <p>가천대학교 안에 있는 일식맛집</p>
+                            </blockquote>
+                        </span>
+                    </div>
                 
+                </article>
             </section>
 
             <section id="study" style="display: none;">
@@ -543,10 +888,10 @@
                                     <input type="radio" name="two_pos" id="two_pos3">
                                     <input type="radio" name="two_pos" id="two_pos4">
                                     <ul>
-                                        <li><img src="./img/cafe/파스쿠치_가천.jpg" width="85%"></li>
-                                        <li><img src="./img/cafe/흑당밀크티.png" width="70%"></li>
-                                        <li><img src="./img/cafe/딸기빙수.png" width="85%"></li>
-                                        <li><img src="./img/cafe/아포가또.png" width="85%"></li>                               
+                                        <li><img src="./img/cafe/투썸_가천.jpg" width="85%"></li>
+                                        <li><img src="./img/cafe/1837.png" width="70%"></li>
+                                        <li><img src="./img/cafe/시그니처.png" width="85%"></li>
+                                        <li><img src="./img/cafe/콜드브루.png" width="85%"></li>                               
                                     </ul>
                                     <p class="two_pos">
                                         <label for="two_pos1"></label>
@@ -560,30 +905,30 @@
                                 <h3>Coffee</h3>
                                 <blockquote>
                                     에스프레소 : 3.3 <br>
-                                    아메리카노 : 4.0<br>
-                                    카페라떼 : 4.5<br>
-                                    카푸치노 : 4.5<br>
-                                    카페모카 : 5.0<br>
+                                    아메리카노 : 4.1<br>
+                                    카페라떼 : 4.6<br>
+                                    카푸치노 : 4.6<br>
+                                    카페모카 : 5.1<br>
                                     콜드브루 : 4.5<br>
-                                    로마노 : 5.0<br>
-                                    샤케라또 : 4.8<br> 
-                                    모카포트 아포가또 : 6.8<br>                 
-                                </blockquote>                                                                              
+                                    투썸 시그니처 라떼 : 4.6<br>
+                                    오렌지 블라썸 라떼 : 5.1<br> 
+                                    티라미수 라떼 : 5.8<br>                 
+                                </blockquote>                                                                 
                                 <h3>Beverage</h3>
                                 <blockquote>
-                                    흑당 펄 라떼 : 5.8<br>
-                                    흑당 펄 밀크티 : 5.5<br>
-                                    요거딸기빙산 빙수 : 14.0<br>
-                                    흑당이달고나빙산 빙수 : 14.0<br>
-                                    히비스커스 페어 크러쉬 : 5.9<br>               
+                                    레몬 셔벗 에이드 : 6.5<br>
+                                    블루베리 요거트 드링크 : 5.0<br>
+                                    1837 블랙티 : 4.8<br>
+                                    스트로베리 피치 프라페 : 5.8<br>
+                                    망고 프라페 : 5.3<br>               
                                 </blockquote>  
-                                <h3>Food</h3>
+                                <h3>Dessert</h3>
                                 <blockquote>
-                                    떠먹는 까사링고 : 13.0<br>
-                                    까사링고 티라미수 : 6.0<br>
-                                    스트로베리 타르트 : 5.8<br>
-                                    레드벨벳 케익 : 6.5<br>
-                                    초코 밀크푸딩무스 : 5.0<br>                        
+                                    로즈베리 생크림 : 5.3<br>
+                                    스트로베리 요거 타르트 : 6.0<br>
+                                    마스카포네 티라미수 : 5.3<br>
+                                    레드벨벳 케이크 :5.5<br>
+                                    뉴욕 치즈 케이크 : 5.5<br>                     
                                 </blockquote>
                                 </div>
                             </div>
@@ -599,7 +944,7 @@
             </section>
             
             <section id="shuttle" style="display: none;">
-                <article id="shuttle_image">
+                <article id="shuttle_image" class="slide">
                     <input type="radio" name="shuttle_pos" id="shuttle_pos1" checked>
                     <input type="radio" name="shuttle_pos" id="shuttle_pos2">
                     <input type="radio" name="shuttle_pos" id="shuttle_pos3">

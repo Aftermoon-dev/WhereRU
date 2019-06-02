@@ -6,7 +6,7 @@
 
 body {
   background-color: #2b2b2b;
-  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Sunflower', sans-serif;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -149,3 +149,13 @@ dialog button {
 #shuttle_image_mobile {
   display: none;
 }
+
+.slide ul{width:400%;height:100%;transition:1s;}
+.slide ul:after{content:"";display:block;clear:both;}
+.slide li{float:left;width:25%;height:100%;}
+.slide li:nth-child(1){background:white;}
+.slide li:nth-child(2){background:white;}
+.slide li:nth-child(3){background:white;}
+.slide li:nth-child(4){background:white}
+.slide input{display:none;}
+.slide label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
