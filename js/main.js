@@ -11,6 +11,9 @@ window.onload = function() {
 
     // Cafe 2 Image Auto-Slide
     setInterval('slide("two_pos")', 5000);
+
+    // Store Image Auto-Slide
+    setInterval('slide("store_pos")', 5000);
 }
 
 // Div List Array
@@ -282,4 +285,9 @@ function food_clicks(element) {
     } else {
         E.style.display = 'none';
     }
+}
+
+function showStore(pNum) {
+    var storepic = document.getElementsById('storepic');
+    storepic[pNum-1].style.display = 'block';
 }
