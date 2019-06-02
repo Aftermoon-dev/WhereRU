@@ -242,32 +242,44 @@ function clicks(cdiv, pdiv) {
 function showFood(type) {
     var allstore = document.getElementsByClassName('foodstore');
     var allcheck = document.getElementsByName('food_check');
+    var all = document.getElementById('food_all');
+
+    for(var i = 0; i < allcheck.length; i++) {
+        allcheck[i].checked = false;
+    }
+
+    for(var i = 0; i < allstore.length; i++) {
+        allstore[i].style.display = 'none';
+    }
 
     if(type != 'all') {
-        var check = document.getElementById('food_' + type);
-        var types = document.getElementsByClassName(type);
+        var types = document.getElementById('food_' + type);
+        var typeinfo = document.getElementsByClassName(type);
 
-        for(var i=0; i < allstore.length; i++) {
-            allstore[i].style.display = 'none';
-        }
+        if(all.checked == true) all.checked = false;
 
-        if(check.checked == true) {
-            for(var i=0; i < types.length; i++) {
-                types[i].style.display = 'inline-block';
+        for(var i = 0; i < typeinfo.length; i++) {
+            typeinfo[i].style.display = 'inline-block';
+        }        
+        types.checked = true;
+    }
+    else {
+        
+        if(all.checked == true) {
+            for(var i = 0; i < allcheck.length; i++) {
+                allcheck[i].checked = true;
+            }
+            for(var i = 0; i < allstore.length; i++) {
+                allstore[i].style.display = 'inline-block';
             }
         }
         else {
-            for(var i=0; i < types.length; i++) {
-                types[i].style.display = 'none';
+            for(var i = 0; i < allcheck.length; i++) {
+                allcheck[i].checked = false;
             }
-        }
-    }
-    else {
-        for(var i=0; i < allstore.length; i++) {
-            allstore[i].style.display = 'inline-block';
-        }
-        for(var i=0; i < allcheck.length; i++) {
-            allcheck[i].checked = false;
+            for(var i = 0; i < allstore.length; i++) {
+                allstore[i].style.display = 'none';
+            }
         }
     }
 }
