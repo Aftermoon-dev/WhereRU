@@ -11,9 +11,6 @@ window.onload = function() {
 
     // Cafe 2 Image Auto-Slide
     setInterval('slide("two_pos")', 5000);
-
-    // Store Image Auto-Slide
-    setInterval('slide("store_pos")', 5000);
 }
 
 // Div List Array
