@@ -190,6 +190,22 @@ function mapselects(e) {
             showMessage("전자정보도서관", 
                 "비전타워와 가까이 있는 도서관이다.");
             break;
+        case 'stardomsquare':
+            showMessage("스타덤광장", 
+                "");
+            break;
+        case 'freedomsquare':
+            showMessage("프리덤광장", 
+                "");
+            break;
+        case 'grasssqaure':
+            showMessage("잔디광장", 
+                "");
+            break;
+        case 'sportgrounds':
+            showMessage("대운동장", 
+                "");
+            break;
         default:
             showMessage("정보 없음", "관리자가 정보를 등록하지 않았습니다.");
     }
@@ -294,9 +310,4 @@ function food_clicks(element) {
     } else {
         E.style.display = 'none';
     }
-}
-
-function showStore(pNum) {
-    var storepic = document.getElementsById('storepic');
-    storepic[pNum-1].style.display = 'block';
 }
